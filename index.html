@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Jaringan Komputer & Web HTML</title>
+    <meta name="description" content="Halaman latihan praktikum HTML dengan tema jaringan komputer dan web.">
+
+    <style>
+    :root{--bg:#0f172a;--surface:#111827;--text:#e5e7eb;--muted:#94a3b8;--accent:#38bdf8;--card:#1f2937;--ok:#10b981;--warn:#f59e0b}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;background:var(--bg);color:var(--text);}
+    a{color:var(--accent)} a:hover{opacity:.9}
+    header{position:sticky;top:0;z-index:10;background:rgba(17,24,39,.85);backdrop-filter:blur(8px);border-bottom:1px solid #1f2937}
+    .wrap{max-width:1000px;margin-inline:auto;padding:1rem}
+    .brand{display:flex;gap:.75rem;align-items:center}
+    .brand .logo{inline-size:40px;block-size:40px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#8b5cf6)}
+    nav[aria-label]{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:.5rem}
+    nav a{padding:.5rem .75rem;border-radius:999px;background:#0b1220;border:1px solid #1f2937;text-decoration:none}
+    nav a[href^="#"]{scroll-behavior:smooth}
+    main{padding:2rem 1rem}
+    section{background:var(--card);border:1px solid #1f2937;border-radius:16px;padding:1.25rem;margin:1rem 0}
+    h1,h2,h3{line-height:1.25;margin:0 0 .5rem}
+    h1{font-size:1.875rem}
+    h2{font-size:1.35rem;color:#f3f4f6}
+    p{color:#d1d5db}
+    .grid{display:grid;gap:1rem}
+    @media(min-width:800px){.grid.cols-2{grid-template-columns:1fr 1fr}}
+    .kbd{font:inherit;background:#0b1220;border:1px solid #1f2937;border-radius:6px;padding:.1rem .4rem}
+    figure{margin:0}
+    figcaption{font-size:.9rem;color:var(--muted);margin-top:.5rem}
+    table{width:100%;border-collapse:collapse;background:#0b1220;border-radius:12px;overflow:hidden}
+    caption{caption-side:top;padding:.75rem;color:#e5e7eb;font-weight:600}
+    thead{background:#111827}
+    th,td{padding:.6rem;border-bottom:1px solid #1f2937;text-align:left}
+    tfoot td{color:var(--muted)}
+    .badge{display:inline-block;font-size:.8rem;padding:.15rem .45rem;border-radius:999px;background:#0b1220;border:1px solid #223047;color:#cbd5e1}
+    .hint{font-size:.9rem;color:var(--muted)}
+    .aside{background:#0b1220;border:1px dashed #1f2937;border-radius:14px;padding:1rem}
+    .hr{border:0;border-top:1px solid #1f2937;margin:1rem 0}
+    .code{background:#0b1220;border:1px solid #1f2937;border-radius:10px;padding:.75rem;overflow:auto}
+    form{display:grid;gap:.65rem}
+    input,select,textarea{width:100%;padding:.6rem;border-radius:10px;border:1px solid #1f2937;background:#0b1220;color:#e5e7eb}
+    input[type="radio"],input[type="checkbox"]{width:auto}
+    button{padding:.6rem 1rem;border:1px solid #1f2937;border-radius:12px;background:#0b1220;color:#e5e7eb;cursor:pointer}
+    .row{display:flex;gap:.75rem;flex-wrap:wrap}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    </style>
+</head>
+<body>
+    <!-- Judul Halaman -->
+    <header>
+    <h1 id="home">Portal Jaringan Komputer & Web HTML</h1>
+    <p>Belajar <strong>Jaringan Komputer</strong> sekaligus memahami <em>HTML</em> untuk membangun web.</p>
+    <nav>
+        <a href="#pengantar">Pengantar</a> |
+        <a href="#materi">Materi</a> |
+        <a href="#tabel">Tabel</a> |
+        <a href="#form">Form</a> |
+        <a href="#media">Media</a> |
+        <a href="#tentang">Tentang</a>
+    </nav>
+    <br>
+    </header>
+
+    <!-- Pengantar -->
+    <section id="pengantar">
+    <h2>PENGANTAR</h2>
+    <hr>
+    <p><u>Jaringan Komputer</u> adalah kumpulan komputer yang saling terhubung dan dapat berbagi data.</p>
+    <p>Jaringan Komputer juga memudahkan pertukaran data antar perangkat, sedangkan HTML menjadi dasar pembuatan halaman web.</p>
+    <p><b>Contoh Penulisan:</b> Rumus sederhana oksigen dapat ditulis dengan O<sup>2</sup>, dan rumus air H<sub>2</sub>O.</p>
+    <p style="text-indent: 15px;"><blockquote>HTML adalah salah satu bahasa pemrograman untuk membuat web</blockquote></p>
+    <p style="text-indent: 15px;"><blockquote>HTML juga digemari banyak orang untuk belajar pemrograman web dasar</blockquote></p>
+    <p><b><u><i>Semoga tugas ini bermanfaat untuk menambah wawasan dalam bidang teknologi dan informasi</i></u></b></p>
+    </section>
+    
+
+    <!-- Materi -->
+    <section id="materi">
+    <h2>MATERI BELAJAR</h2>
+    <hr>
+    <article>
+        <br>
+        <h3>Daftar Materi</h3>
+        <ul>
+        <li>Pengantar Jaringan Komputer</li>
+        <li>Pengantar HTML</li>
+        </ul>
+    </article>
+    <article>
+        <h3>Langkah Belajar</h3>
+        <ol>
+        <li>Pelajari dasar jaringan</li>
+        <li>Pahami HTML dasar</li>
+        <li>Praktikkan dengan membuat web sederhana</li>
+        </ol>
+    </article>
+    <article>
+        <h3>Istilah Penting</h3>
+        <dl>
+        <dt>IP Address</dt>
+        <dd>Alamat numerik unik di jaringan.</dd>
+        <dt>Web</dt>
+        <dd>Perangkat penghubung antar jaringan.</dd>
+        <dt>HTML</dt>
+        <dd>Singkatan dari <em><mark>HyperText Markup Language</mark></em>, yaitu bahasa standar untuk membuat struktur halaman web.</dd>
+        </dl>
+    </article>
+    <p><a href="https://www.gramedia.com/literasi/pengertian-jaringan-komputer/" target="_blank">Baca tentang Jaringan Komputer lebih lanjut di gramedia</a></p>
+    <p><a href="https://www.rumahweb.com/journal/html-adalah/" target="_blank">Baca tentang <code>&lt;HTML&gt;</code> lebih lanjut di rumah web</a></p>
+    </section>
+
+    <!-- Tabel -->
+    <section id="tabel">
+    <h2>TABEL PROTOCOL</h2>
+    <hr>
+    <table>
+        <table border="1">
+        <caption>Protocol Jaringan Populer</caption>
+        <thead>
+            <tr>
+                <th scope="col">Protocol</th>
+                <th scope="col">Port</th>
+                <th scope="col">Fungsi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">HTTP</th>
+                <td>8080</td>
+                <td>Transfer halaman web</td>
+            </tr>
+            <tr>
+                <th scope="row">HTTPS</th>
+                <td>443</td>
+                <td>Transfer halaman web aman</td>
+            </tr>
+            <tr>
+                <th scope="row">FTP</th>
+                <td>21</td>
+                <td>Transfer file</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Tabel ini hanya contoh, masih banyak Protocol lainnya.</td>
+            </tr>
+        </tfoot>
+    </table>
+    </section>
+
+<!-- Form -->
+<section id="form">
+    <h2>FORM SARAN BELAJAR</h2>
+    <form action="#" method="post" novalidate>
+        <fieldset>
+            <legend>Data Diri</legend>
+            <p>
+                <label for="nama">Nama Lengkap</label><br>
+                <input type="text" id="nama" name="nama" required placeholder="Nama Anda">
+            </p>
+            <p>
+                <label for="kelas">Kelas / Jurusan</label><br>
+                <input type="text" id="kelas" name="kelas" placeholder="Contoh: TI-2024-KIP-P4">
+            </p>
+            <p>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required placeholder="nama@contoh.com">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferensi Belajar</legend>
+            <p>
+                Materi yang paling diminati:<br>
+                <label><input type="checkbox" name="materi" value="jaringan"> Jaringan Komputer</label><br>
+                <label><input type="checkbox" name="materi" value="html"> HTML Dasar</label><br>
+                <label><input type="checkbox" name="materi" value="css"> CSS Dasar</label><br>
+                <label><input type="checkbox" name="materi" value="praktikum"> Praktikum Web</label>
+            </p>
+            <p>
+                Tingkat pemahaman saat ini:<br>
+                <select id="level" name="level">
+                    <option value="">-- pilih --</option>
+                    <option>Pemula</option>
+                    <option>Menengah</option>
+                    <option>Lanjutan</option>
+                </select>
+            </p>
+            <p>
+                <label for="saran">Saran untuk materi selanjutnya</label><br>
+                <textarea id="saran" name="saran" rows="4" cols="40" placeholder="Tuliskan saran Anda..."></textarea>
+            </p>
+        </fieldset>
+
+        <br>
+        <p>
+            <button type="submit">Kirim</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+</section>
+
+    <!-- Media -->
+    <section id="media">
+        <h2>MEDIA</h2>
+        <hr>
+        <ul>
+            <li><h3>Gambar Topologi</h3></li>
+        </ul>
+        <figure>
+            <img src="assets/images/4A.png" alt="Contoh Topologi Jaringan" width="400">
+            <figcaption>Contoh Gambar Topologi Jaringan Komputer</figcaption>
+        </figure>
+        <br>
+        <ul>
+            <li><h3>Video Pembelajaran HTML</h3></li>
+        </ul>
+        <figure>
+            <video controls width="480" poster="assets/images/html.png">
+            <source src="assets/video/Belajar HTML Dari Nol Sampai Mahir _ Untuk Pemula _ Membuat, Menyimpan Dan Menjalankan HTML.mp4" 
+            type="video/mp4">
+            <figcaption>Contoh Video Pembelajaran HTML</figcaption>
+        </video>
+        </figure>
+        <br>
+        <ul>
+            <li><h3>Audio No Copy Right</h3></li>
+        </ul>
+        <figure>
+        <audio controls>
+            <source src="assets/audio/Different Heaven - Safe And Sound House NCS.mp3" type="audio/mp3">
+            <p>Browser Anda tidak mendukung audio. Silakan unduh <a href="assets/audio/Different Heaven - Safe And Sound House NCS.mp3">
+                audio</a>.</p>
+        </audio>
+        <p>Audio di atas adalah lagu yang sering dipakai Youtuber Windah Basudara dan tentu saja audio nya tidak ada copyright.</p>
+        </figure>
+        </section>
+
+    <!-- Tentang Halaman -->
+    <section id="tentang">
+    <h2>TENTANG HALAMAN</h2>
+    <hr>
+    <p>Halaman ini dibuat untuk memenuhi tugas praktikum HTML sesi 1–14 dengan tema 
+        <mark>Jaringan Komputer dan Web HTML</mark>.
+    </p>
+    <p>Profil Mahasiswa<br>
+        Nama    : Muhammad Fakhri Faisal<br>
+        Kelas   : TI-2024-KIP-P4<br>
+        Nim     : 41246943<br>
+    </p>
+    <p>Terima kasih sudah melihatnya sampai akhir, saya harap dapat diberikan kritikan 
+        dan saran agar bisa membuat web yang lebih bagus.
+    </p>
+    <hr aria-hidden="true">
+    <p>&copy; <time datetime="2025">2025</time> Portal Jaringan & Web HTML</p>
+    </section>
+
+    <footer>
+    <p><a href="#home">Kembali ke atas</a></p>
+    </footer>
+</body>
+</html>
